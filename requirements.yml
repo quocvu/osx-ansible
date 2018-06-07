@@ -1,5 +1,5 @@
 # nodejs
-- src: quocvu.nodejs-ansible
+- src: quocvu.nodejs
 
 # mysql
 - src: roderik.superlumic-mysql

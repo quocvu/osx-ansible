@@ -5,7 +5,7 @@ echo "  Setting up your Mac                      "
 echo "==========================================="
 
 sudo easy_install pip
-sudo easy_install ansible
+sudo pip install ansible
 
 install_dir="/tmp/setupmac-$RANDOM"
 mkdir $install_dir
@@ -22,7 +22,7 @@ else
 fi
 
 echo "Cleaning up. Remove repo..."
-rm -Rfv /tmp/$install_dir
+rm -Rfv $install_dir
 
 echo "All done!"
 exit 0

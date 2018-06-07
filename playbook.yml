@@ -3,5 +3,7 @@
 - hosts: laptop
   roles:
     - role: setup
+    - role: jeremyltn.osx-oh-my-zsh
     - role: quocvu.nodejs
     - { role: roderik.superlumic-mysql, mysql_root_password: mysql }
+    - role: roderik.superlumic-postgresql
