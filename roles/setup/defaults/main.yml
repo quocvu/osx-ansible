@@ -8,11 +8,14 @@ homebrew_apps:
   - ag
   - autojump
   - awscli
+  - coreutils
+  - gpg
   - httpie
   - openssl
   - mongodb
-  - mysql
   - redis
+  - rsync
+  - tmux
   - tree
   - wget
 
@@ -21,6 +24,7 @@ cask_apps:
   - appcleaner
   - box-sync
   - caffeine
+  - cyberduck
   - dropbox
   - firefox
   - google-chrome
