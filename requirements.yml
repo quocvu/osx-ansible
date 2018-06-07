@@ -1,0 +1,11 @@
+# nodejs
+- src: quocvu.nodejs-ansible
+
+# mysql
+- src: roderik.superlumic-mysql
+
+# postgresql
+- src: roderik.superlumic-postgresql
+
+# zsh
+- src: jeremyltn.osx-oh-my-zsh

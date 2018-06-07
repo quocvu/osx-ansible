@@ -1,2 +1,7 @@
 # osx-ansible
-Playbook to setup a new Macbook
+
+Ansible playbook to setup a new Macbook.
+
+Simply run:
+
+    curl -s https://raw.githubusercontent.com/quocvu/osx-ansible/master/start.sh | /bin/bash

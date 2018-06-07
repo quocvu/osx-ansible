@@ -1,0 +1,7 @@
+---
+
+- hosts: laptop
+  roles:
+    - role: setup
+    - role: quocvu.nodejs
+    - { role: roderik.superlumic-mysql, mysql_root_password: mysql }

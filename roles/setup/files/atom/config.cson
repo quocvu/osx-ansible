@@ -1,0 +1,40 @@
+"*":
+  "autocomplete-python":
+    useKite: false
+  core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "nuclide"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    fontFamily: "monaco"
+    fontSize: 12
+    tabType: "soft"
+  "exception-reporting":
+    userId: "7f08b23b-1b63-4d4e-92d0-54959882d719"
+  "linter-ui-default":
+    panelHeight: 81
+  "tree-view":
+    hideVcsIgnoredFiles: true
+".python.source":
+  editor:
+    autoIndentOnPaste: true
+    showIndentGuide: true
+    tabLength: 4

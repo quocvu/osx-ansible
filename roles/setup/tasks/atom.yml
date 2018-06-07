@@ -1,0 +1,23 @@
+- name: install atom.io editor
+  homebrew_cask:
+    name: atom
+    state: present
+  tags:
+    - installation
+    - atom
+
+- name: install atom packages
+  shell: apm install {{ item }}
+  with_items: "{{ atom_packages }}"
+  tags:
+    - installation
+    - atom
+
+- name: restore atom config
+  copy:
+    src: backgrounds/
+    dest: /Users/{{ ansible_user }}/.atom
+    directory_mode: 0755
+  tags:
+    - installation
+    - atom

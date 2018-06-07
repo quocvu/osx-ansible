@@ -1,0 +1,69 @@
+# taps for homebrew
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - caskroom/cask
+
+homebrew_apps:
+  - ag
+  - autojump
+  - awscli
+  - httpie
+  - openssl
+  - mongodb
+  - mysql
+  - redis
+  - tree
+  - wget
+
+cask_apps:
+  - alfred
+  - appcleaner
+  - box-sync
+  - caffeine
+  - dropbox
+  - firefox
+  - google-chrome
+  - google-drive
+  - iterm2
+  - psequel
+  - rdm
+  - robo-3t
+  - sequel-pro
+  - simplenote
+  - skitch
+  - spectacle
+  - speedcrunch
+  - spotify
+  - sourcetree
+  - the-unarchiver
+  - vagrant
+  - virtualbox
+  - vlc
+
+dotfile_location: https://raw.githubusercontent.com/quocvu/dotfiles/master
+
+dotfiles:
+  - aliases
+  - editorconfig
+  - eslintrc
+  - gitconfig
+  - jshintrc
+  - npmrc
+  - nvmrc
+
+atom_packages:
+  - autocomplete-python@1.9.1
+  - busy-signal@1.4.3
+  - intentions@1.1.2
+  - language-javascript-jsx@0.3.7
+  - linter@2.2.0
+  - linter-eslint@8.2.1
+  - linter-python-pep8@0.2.0
+  - linter-sass-lint@1.7.4
+  - linter-ui-default@1.6.2
+  - nuclide@0.236.0
+  - nuclide-esformatter@0.3.1
+  - nuclide-format-js@0.0.36
+  - python-autopep8@0.1.3
+  - react-native-snippets@0.3.0
