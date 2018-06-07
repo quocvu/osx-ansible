@@ -7,7 +7,7 @@ echo "==========================================="
 sudo easy_install pip
 sudo easy_install ansible
 
-install_dir="~/setupmac-$RANDOM"
+install_dir="/tmp/setupmac-$RANDOM"
 mkdir $install_dir
 
 git clone https://github.com/quocvu/osx-ansible.git $install_dir
