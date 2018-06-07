@@ -9,7 +9,7 @@
   tags:
     - installation
 
-- name: start installing homebrew cask applications
+- name: install homebrew cask applications
   homebrew_cask:
     name: "{{ item }}"
     state: present
@@ -19,7 +19,7 @@
 
 - name: setup dotfiles
   get_url:
-    url: {{ dotfile_location }}/.{{ item }}
+    url: "{{ dotfile_location }}/.{{ item }}"
     dest: /Users/{{ ansible_user }}/.{{ item }}
   with_items: "{{ dotfiles }}"
   tags:
