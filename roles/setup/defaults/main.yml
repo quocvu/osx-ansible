@@ -1,9 +1,12 @@
+hostname: colossus
+
 # taps for homebrew
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
   - caskroom/cask
 
+# apps available via homebrew
 homebrew_apps:
   - ag
   - autojump
@@ -19,6 +22,7 @@ homebrew_apps:
   - tree
   - wget
 
+# apps available via cask
 cask_apps:
   - alfred
   - appcleaner
@@ -71,3 +75,12 @@ atom_packages:
   - nuclide-format-js@0.0.36
   - python-autopep8@0.1.3
   - react-native-snippets@0.3.0
+
+oh_my_zsh:
+  plugins: git
+  theme: avit
+  case_sensitive: false
+  hyphen_insensitive: false
+  disable_update_prompt: false
+  disable_auto_update: true
+  update_days: 30
