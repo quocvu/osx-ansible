@@ -13,6 +13,8 @@
     path: /etc/hosts
     block: |
       127.0.1.1	{{ hostname }}.localdomain	{{ hostname }}
+  become: yes
+  become_user: root
   tags:
     - configuration
 
