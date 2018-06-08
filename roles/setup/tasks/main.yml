@@ -3,6 +3,8 @@
 
 - name: change hostname
   shell: hostname {{ hostname }}
+  become: yes
+  become_user: root
   tags:
     - configuration
 
