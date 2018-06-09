@@ -10,8 +10,6 @@
 
 - name: install oh-my-zsh
   shell: "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-  args:
-    chdir: /Users/"{{ ansible_user }}"
 
 - name: setup zsh config
   template:
