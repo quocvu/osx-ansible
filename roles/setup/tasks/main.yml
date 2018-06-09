@@ -21,6 +21,9 @@
 - name: install homebrew
   import_tasks: homebrew.yml
 
+- name: install zsh
+  import_tasks: zsh.yml
+
 - name: install homebrew apps
   homebrew:
     name: "{{ item }}"
@@ -36,9 +39,6 @@
   with_items: "{{ cask_apps }}"
   tags:
     - installation
-
-- name: install zsh
-  import_tasks: zsh.yml
 
 - name: install atom
   import_tasks: atom.yml

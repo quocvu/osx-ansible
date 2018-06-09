@@ -11,7 +11,7 @@
 - name: install oh-my-zsh
   git:
     repo: https://github.com/robbyrussell/oh-my-zsh
-    dest: /User/{{ ansible_user }}/.oh-my-zsh
+    dest: /Users/{{ ansible_user }}/.oh-my-zsh
   tags:
     - installation
 
