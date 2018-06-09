@@ -9,7 +9,7 @@
     - installation
 
 - name: install oh-my-zsh
-  command: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  command: /bin/sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 - name: setup zsh config
   template:
