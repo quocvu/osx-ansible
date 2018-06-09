@@ -1,2 +1,2 @@
 [laptop]
-localhost ansible_connection=local ansible_user=vagrant
+localhost ansible_connection=local

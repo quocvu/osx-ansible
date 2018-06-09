@@ -57,8 +57,6 @@ dotfiles:
   - eslintrc
   - gitconfig
   - jshintrc
-  - npmrc
-  - nvmrc
 
 atom_packages:
   - autocomplete-python@1.9.1
