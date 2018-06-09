@@ -4,7 +4,7 @@ hostname: colossus
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
-  - caskroom/cask
+  - homebrew/services
 
 # apps available via homebrew
 homebrew_apps:
@@ -77,7 +77,7 @@ atom_packages:
   - react-native-snippets@0.3.0
 
 oh_my_zsh:
-  plugins: git
+  plugins: autojump aws bower brew cask git httpie jsontools node npm osx sudo tmux vagrant web-search
   theme: avit
   case_sensitive: false
   hyphen_insensitive: false
