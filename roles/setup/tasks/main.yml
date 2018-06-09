@@ -40,10 +40,12 @@
 - name: install zsh
   import_tasks: zsh.yml
 
-- name: change shell and generate ssh key
+- name: install atom
+  import_tasks: atom.yml
+
+- name: generate ssh key
   user:
     name: "{{ ansible_user }}"
-    shell: /bin/zsh
     generate_ssh_key: yes
     ssh_key_bits: 2048
     ssh_key_file: .ssh/id_rsa
@@ -64,6 +66,3 @@
     creates: /usr/local/var/log/mysql-root-user.done
   tags:
     - configuration
-
-- name: install atom
-  import_tasks: atom.yml

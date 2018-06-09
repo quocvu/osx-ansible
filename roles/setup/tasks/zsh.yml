@@ -9,9 +9,22 @@
     - installation
 
 - name: install oh-my-zsh
-  command: /bin/sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  git:
+    repo: https://github.com/robbyrussell/oh-my-zsh
+    dest: /User/{{ ansible_user }}/.oh-my-zsh
+  tags:
+    - installation
 
 - name: setup zsh config
   template:
     src: zshrc.j2
     dest: /Users/{{ ansible_user }}/.zshrc
+  tags:
+    - configuration
+
+- name: change shell
+  user:
+    name: "{{ ansible_user }}"
+    shell: /bin/zsh
+  tags:
+    - configuration
