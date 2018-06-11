@@ -75,8 +75,8 @@ atom_packages:
   - react-native-snippets@0.3.0
 
 oh_my_zsh:
-  plugins: autojump aws bower brew cask git httpie jsontools node npm osx sudo tmux vagrant web-search
-  theme: avit
+  plugins: autojump aws bower brew git httpie jsontools node npm osx sudo tmux vagrant web-search
+  theme: "powerlevel9k/powerlevel9k"
   case_sensitive: false
   hyphen_insensitive: false
   disable_update_prompt: false

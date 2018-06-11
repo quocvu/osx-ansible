@@ -30,21 +30,21 @@ DISABLE_AUTO_UPDATE="{{ oh_my_zsh.disable_auto_update  }}"
 export UPDATE_ZSH_DAYS={{ oh_my_zsh.update_days }}
 
 # Uncomment following line if you want to disable colors in ls
-DISABLE_LS_COLORS=false
+DISABLE_LS_COLORS="false"
 
 # Uncomment following line if you want to disable autosetting terminal title.
-DISABLE_AUTO_TITLE=false
+DISABLE_AUTO_TITLE="false"
 
 # Uncomment following line if you want to disable command autocorrection
-DISABLE_CORRECTION=false
+DISABLE_CORRECTION="false"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-COMPLETION_WAITING_DOTS=true
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment following line if you want to disable marking untracked files under
 # VCS as dirty. This makes repository status check for large repositories much,
 # much faster.
-DISABLE_UNTRACKED_FILES_DIRTY=false
+DISABLE_UNTRACKED_FILES_DIRTY="false"
 
 # Uncomment following line if you want to  shown in the command execution time stamp
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
@@ -59,7 +59,7 @@ plugins=({{ oh_my_zsh.plugins }})
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-# export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
