@@ -7,11 +7,13 @@
     state: latest
   tags:
     - installation
+    - zsh
 
 - name: install oh-my-zsh
   shell: '/bin/sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
   tags:
     - installation
+    - zsh
 
 - name: download powerline fonts for themes
   git:
@@ -20,6 +22,7 @@
     depth: 1
   tags:
     - installation
+    - zsh
 
 - name: install powerline fonts
   copy:
@@ -28,13 +31,16 @@
     directory_mode: 0755
   tags:
     - installation
+    - zsh
 
 - name: install themes
   git:
-    repo: https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+    repo: https://github.com/bhilburn/powerlevel9k.git
     dest: /Users/{{ ansible_user }}/.oh-my-zsh/custom/themes/powerlevel9k
   tags:
     - installation
+    - zsh
+    - xxx
 
 - name: setup zsh config
   template:
@@ -42,6 +48,8 @@
     dest: /Users/{{ ansible_user }}/.zshrc
   tags:
     - configuration
+    - zsh
+    - xxx
 
 - name: change shell
   user:
@@ -49,3 +57,5 @@
     shell: /bin/zsh
   tags:
     - configuration
+    - zsh
+    - xxx
