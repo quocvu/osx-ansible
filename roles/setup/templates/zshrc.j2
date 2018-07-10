@@ -63,7 +63,4 @@ export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
-if [ -e .aliases ]
-then
-    source .aliases
-fi
+[[ -f ~/.aliases ]] && source .aliases

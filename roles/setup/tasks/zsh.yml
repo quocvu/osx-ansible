@@ -40,7 +40,6 @@
   tags:
     - installation
     - zsh
-    - xxx
 
 - name: setup zsh config
   template:
@@ -49,7 +48,6 @@
   tags:
     - configuration
     - zsh
-    - xxx
 
 - name: change shell
   user:
@@ -58,4 +56,3 @@
   tags:
     - configuration
     - zsh
-    - xxx
