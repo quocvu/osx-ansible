@@ -16,6 +16,8 @@ homebrew_apps:
   - httpie
   - openssl
   - mongodb
+  - mysql
+  - postgresql
   - redis
   - rsync
   - tmux
@@ -78,7 +80,7 @@ atom_packages:
   - react-native-snippets@0.3.0
 
 oh_my_zsh:
-  plugins: autojump aws bower brew colored-man colorize git httpie jsontools node npm osx sudo tmux vagrant web-search zsh-syntax-highlighting
+  plugins: autojump aws bower brew colored-man colorize git httpie jsontools node npm osx sudo tmux vagrant zsh-syntax-highlighting
   theme: "powerlevel9k/powerlevel9k"
   case_sensitive: "false"
   hyphen_insensitive: "false"

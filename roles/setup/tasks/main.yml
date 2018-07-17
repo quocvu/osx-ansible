@@ -49,6 +49,11 @@
   tags:
     - installation
 
+- name: install VirtualBox guest additions
+  shell: vagrant plugin install vagrant-vbguest
+  tags:
+    - installation
+
 - name: install atom
   import_tasks: atom.yml
 
