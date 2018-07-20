@@ -18,7 +18,7 @@ else
     cd $install_dir
     mkdir -p ~/.ansible/roles
     ansible-galaxy install -r requirements.yml
-    ansible-playbook -i ./hosts playbook.yml --verbose
+    ansible-playbook -i ./hosts playbook.yml --verbose -K
 fi
 
 echo "Cleaning up. Remove repo..."
