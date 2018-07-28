@@ -67,7 +67,7 @@
 - name: setup dotfiles
   get_url:
     url: "{{ dotfile_location }}/.{{ item }}"
-    dest: /Users/{{ ansible_user }}/.{{ item }}
+    dest: {{ lookup('env','HOME') }}/.{{ item }}
   with_items: "{{ dotfiles }}"
   tags:
     - configuration

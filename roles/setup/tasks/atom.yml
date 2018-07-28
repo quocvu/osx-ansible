@@ -19,7 +19,7 @@
 - name: restore atom config
   copy:
     src: atom/
-    dest: /Users/{{ ansible_user }}/.atom
+    dest: {{ lookup('env','HOME') }}/.atom
     directory_mode: 0755
   tags:
     - installation

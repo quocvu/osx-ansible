@@ -2,7 +2,6 @@
 
 - hosts: laptop
   roles:
-#    - role: setup
-#    - role: quocvu.nodejs
+    - role: setup
+    - role: quocvu.nodejs
     - role: quocvu.postgresql
-#    - role: mysql

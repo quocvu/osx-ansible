@@ -27,7 +27,7 @@
 - name: install powerline fonts
   copy:
     src: /tmp/powerline_fonts/
-    dest: /Users/{{ ansible_user }}/Library/fonts/
+    dest: {{ lookup('env','HOME') }}/Library/fonts/
     directory_mode: 0755
   tags:
     - installation
@@ -36,7 +36,7 @@
 - name: install themes
   git:
     repo: https://github.com/bhilburn/powerlevel9k.git
-    dest: /Users/{{ ansible_user }}/.oh-my-zsh/custom/themes/powerlevel9k
+    dest: {{ lookup('env','HOME') }}/.oh-my-zsh/custom/themes/powerlevel9k
   tags:
     - installation
     - zsh
@@ -44,7 +44,7 @@
 - name: setup zsh config
   template:
     src: zshrc.j2
-    dest: /Users/{{ ansible_user }}/.zshrc
+    dest: {{ lookup('env','HOME') }}/.zshrc
   tags:
     - configuration
     - zsh
