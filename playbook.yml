@@ -3,5 +3,6 @@
 - hosts: laptop
   roles:
     - role: setup
+    - role: quocvu.zsh
     - role: quocvu.nodejs
     - role: quocvu.postgresql

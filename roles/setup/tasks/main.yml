@@ -30,9 +30,6 @@
 - name: install homebrew
   import_tasks: homebrew.yml
 
-- name: install zsh
-  import_tasks: zsh.yml
-
 - name: install homebrew apps
   homebrew:
     name: "{{ item }}"
