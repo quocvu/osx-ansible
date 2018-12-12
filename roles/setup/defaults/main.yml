@@ -37,6 +37,7 @@ cask_apps:
   - dropbox
   - firefox
   - google-chrome
+  - google-cloud-sdk
   - google-drive
   - grammarly
   - iterm2
