@@ -64,7 +64,21 @@
 - name: setup dotfiles
   get_url:
     url: "{{ dotfile_location }}/.{{ item }}"
-    dest: {{ lookup('env','HOME') }}/.{{ item }}
+    dest: "{{ lookup('env','HOME') }}/.{{ item }}"
   with_items: "{{ dotfiles }}"
   tags:
     - configuration
+
+- name: prevent creation of annoying .DS_Store dotfiles
+  shell: defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+  tags:
+    - configuration
+
+- name: install useful npm modules
+  become: no
+  shell: . {{ lookup('env','HOME') }}/.nvm/nvm.sh && nvm use stable && npm install -g {{ item }}
+  args:
+    executable: '/bin/bash'
+  with_items: "{{ npm_global_packages }}"
+  tags:
+    - nodejs

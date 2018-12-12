@@ -1,8 +1,3 @@
-# nodejs
 - src: quocvu.nodejs
-
-# postgresql
 - src: quocvu.postgresql
-
-# mysql
-- src: roderik.superlumic-mysql
+- src: quocvu.zsh
