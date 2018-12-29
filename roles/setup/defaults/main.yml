@@ -41,6 +41,7 @@ cask_apps:
   - google-drive
   - grammarly
   - iterm2
+  - kid3
   - musicbrainz-picard
   - osxfuse
   - psequel
@@ -70,10 +71,12 @@ dotfiles:
   - jshintrc
 
 atom_packages:
+  - atom-beautify
   - autocomplete-python@1.9.1
   - busy-signal@1.4.3
   - intentions@1.1.2
   - language-javascript-jsx@0.3.7
+  - language-vue
   - linter@2.2.0
   - linter-eslint@8.2.1
   - linter-python-pep8@0.2.0
