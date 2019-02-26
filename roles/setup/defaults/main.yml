@@ -90,7 +90,7 @@ atom_packages:
 
 # list of the NPM packages to install globally
 npm_global_packages:
-  - @angular/cli
+  - "@angular/cli"
   - firebase-tools
   - less
-  - @vue/cli
+  - "@vue/cli"
