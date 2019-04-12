@@ -31,7 +31,6 @@ cask_apps:
   - alfred
   - appcleaner
   - box-sync
-  - caffeine
   - cyberduck
   - docker
   - dropbox
@@ -42,6 +41,7 @@ cask_apps:
   - grammarly
   - iterm2
   - kid3
+  - KeepingYouAwake
   - musicbrainz-picard
   - osxfuse
   - psequel
