@@ -42,6 +42,7 @@ cask_apps:
   - iterm2
   - kid3
   - KeepingYouAwake
+  - libreoffice
   - musicbrainz-picard
   - osxfuse
   - psequel
